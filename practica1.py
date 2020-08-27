@@ -19,15 +19,18 @@ coseno = CosSignal(freq=800, amp=1.1, offset=0)
 seno.plot()
 
 #plot permite raficar(frecuenci de muestreo)
-decorate(xlabel='tiempo(s) seno', ylabel='Amplitud')
+decorate(xlabel='tiempo(s)', ylabel='Amplitud')
 #para mostrar la señal
+plt.title('Seno')
 plt.show()
 #el seno comienza en 0 y el coseno en 1, el seno es la componente en x, y el coseno en y
 coseno.plot()
-decorate(xlabel='tiempo(s) coseno', ylabel='Amplitud')
+decorate(xlabel='tiempo(s)', ylabel='Amplitud')
+plt.title('Coseno')
 plt.show()
 
 seno.plot()
 coseno.plot()
 decorate(xlabel='tiempo(s)', ylabel='Amplitud')
+plt.title('Seno y Coseno')
 plt.show()
