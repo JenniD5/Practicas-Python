@@ -9,7 +9,7 @@ from thinkdsp import UncorrelatedUniformNoise
 
 senal = UncorrelatedUniformNoise()
 wave = senal.make_wave(duration=0.5, framerate=22050)
-#wave.write("ruido_no_correlacional_uniforme.wav")
+wave.write("ruido_no_correlacional_uniforme2.wav")
 segmento = wave.segment(duration=0.05)
 segmento.plot()
 decorate(xlabel = "timepo(s)", ylabel="amplitud")
